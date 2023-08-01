@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/custom_toobar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:text="Parwinder-"
+            />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextFirstName"
+            android:hint="Last Name"
+            android:text="Singh"/>
+
+
+        <EditText
+            android:id="@+id/editTextCollegeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextLastName"
+            android:hint="College Name"
+            android:layout_marginTop="30dp"
+            android:text="Conestoga"/>
+
+        <EditText
+            android:id="@+id/editTextCampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCollegeName"
+            android:hint="Campus"
+            android:text="Waterloo"/>
+
+        <EditText
+            android:id="@+id/editTextProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCampus"
+            android:hint="Program"
+            android:text="Mobile Solutions Development"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextProgram"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:text="pranota@conestogac.on.ca"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="Hello"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPassword"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:text="Hello"/>
+
+        <EditText
+            android:id="@+id/editTextMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextConfirmPassword"
+            android:hint="Mobile Number"
+            android:inputType="textPhonetic"
+            android:text="2269876756"/>
+
+        <Spinner
+            android:id="@+id/spinnerSecurityQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextMobileNo"
+            android:hint="Security Question"
+            android:inputType="textPassword"
+            android:entries="@array/security_questions"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/editTextSecurityAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerSecurityQuestion"
+            android:hint="Security Answer"
+            android:text="Hello World"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_below="@+id/editTextSecurityAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBarLoading"
+            android:text="Register"
+            android:layout_marginTop="30dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

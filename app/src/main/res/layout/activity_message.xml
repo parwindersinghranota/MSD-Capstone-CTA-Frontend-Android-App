@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/custom_toobar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ride_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp"
+        android:background="#EFE6FF">
+
+        <TextView
+            android:id="@+id/textViewProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pranota@conestogac.on.ca"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewRideDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewProvider"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:text="Ride Time: June 13, 2023 at 23:15" />
+
+        <TextView
+            android:id="@+id/textViewRideDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRideDateTime"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="Hello world, the quick brown fox jumps over the lazy dog. hello again this is ride text." />
+
+        <Button
+            android:id="@+id/buttonDriverFeedback"
+            android:layout_below="@+id/textViewRideDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver's Feedback/Ratings"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ride_info"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:textColor="#673AB7"
+        android:id="@+id/tvPreviousRide"
+        android:text="You already had ride with this driver."
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="#FFEB3B"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvPreviousRide"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/relativeLayoutEditControls"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEditControls"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Enter message here"
+                android:layout_toLeftOf="@+id/imageButtonSendMessage"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonSendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

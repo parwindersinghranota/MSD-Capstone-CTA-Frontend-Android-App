@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textViewProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="pranota@conestogac.on.ca"/>
+
+    <TextView
+        android:id="@+id/textViewRideDateTime"
+        android:layout_below="@+id/textViewProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ride Time: June 13, 2023 at 23:15"/>
+
+    <TextView
+        android:id="@+id/textViewRideDescription"
+        android:layout_below="@+id/textViewRideDateTime"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello world, the quick brown fox jumps over the lazy dog. hello again this is ride text."/>
+
+    <ImageButton
+        android:id="@+id/imageButtonDeleteRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRideDescription"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_delete"/>
+
+</RelativeLayout>

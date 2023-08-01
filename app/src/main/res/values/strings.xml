@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CTA</string>
+    <string name="app_full_name">Conestoga Travel Assistant</string>
+
+    <!-- Developer Info -->
+    <string name="email">capstone.msd.team10@conestogac.on.ca</string>
+    <string name="search_hint">Search Ride</string>
+
+    <!-- Security Questions Array -->
+    <string-array name="security_questions">
+        <item>What is your mother\'s maiden name?</item>
+        <item>What city were you born in?</item>
+        <item>What is your favorite color?</item>
+        <item>What was the name of your first pet?</item>
+        <item>What is your favorite book?</item>
+        <item>What is your favorite movie?</item>
+        <item>What is the name of your best friend from childhood?</item>
+        <item>What is the make and model of your first car?</item>
+        <item>What is the name of the street you grew up on?</item>
+        <item>What is your favorite vacation destination?</item>
+    </string-array>
+
+    <!-- Survey Questions -->
+    <string name="question_1">I spend more than 30 minutes commuting to college each way.</string>
+    <string name="question_2">Which mode of transportation do you primarily use for your commute to college?</string>
+    <string name="question_3">What are the main challenges you face during your commute to college?</string>
+    <string name="question_4">I have missed classes due to transportation issues.</string>
+    <string name="question_5">How often do you encounter traffic congestion during your commute to college?</string>
+    <string name="question_6">Have you ever considered carpooling or ridesharing as a solution to your commuting challenges? Why or why not?</string>
+    <string name="question_7">I find the cost of transportation to college a financial burden.</string>
+    <string name="question_8">What improvements or solutions would you like to see in transportation options for commuting to college?</string>
+    <string name="question_9">Any other concern(s)</string>
+
+    <string name="survey_disclaimer">As part of our commitment to continuous improvement, we have incorporated a survey module to collect user feedback. Rest assured that any information provided through the survey will be treated as strictly confidential and will not be shared with any third parties. Your privacy and trust are of utmost importance to us.</string>
+
+    <string name="accept_ride_message">PLEASE, ACCEPT MY RIDE REQUEST.</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parwinder Singh"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pranota@conestogac.on.ca"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile No."
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2269878988"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewCollege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conestoga College"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewCampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waterloo"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Solutions Development"
+        android:textSize="18sp"/>
+
+</LinearLayout>

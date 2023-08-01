@@ -1,0 +1,447 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/custom_toobar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="#673AB7"
+        android:id="@+id/survey_disclaimer"
+        android:text="@string/survey_disclaimer"
+        android:padding="5dp"
+        android:background="#FFEB3B"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/survey_disclaimer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:id="@+id/heading_1"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Question-1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_1"
+                android:text="@string/question_1"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_1_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_1_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!-- Question 2 -->
+            <TextView
+                android:id="@+id/heading_2"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_1"
+                android:layout_marginTop="40dp"
+                android:text="Question-2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_2"
+                android:text="@string/question_2"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_2"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_2_op_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public Transportation (Bus/Train)"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_2_op_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car" />
+
+                <RadioButton
+                    android:id="@+id/answer_2_op_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bicycles/scooters" />
+
+                <RadioButton
+                    android:id="@+id/answer_2_op_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Walking" />
+
+                <RadioButton
+                    android:id="@+id/answer_2_op_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carpooling with others" />
+            </RadioGroup>
+
+
+            <!-- Question 3 -->
+            <TextView
+                android:id="@+id/heading_3"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_2"
+                android:layout_marginTop="40dp"
+                android:text="Question-3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_3"
+                android:text="@string/question_3"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/question_3"
+                android:gravity="bottom"
+                android:hint="Enter your response here"
+                android:text="dummy answer 3"/>
+
+
+            <!-- Question 4 -->
+            <TextView
+                android:id="@+id/heading_4"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_3"
+                android:layout_marginTop="40dp"
+                android:text="Question-4"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_4"
+                android:text="@string/question_4"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_4"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_4_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_4_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+
+            <!-- Question 5 -->
+            <TextView
+                android:id="@+id/heading_5"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_4"
+                android:layout_marginTop="40dp"
+                android:text="Question-5"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_5"
+                android:text="@string/question_5"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_5"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_5_op_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rarely"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_5_op_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Occasionally" />
+
+                <RadioButton
+                    android:id="@+id/answer_5_op_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Frequently" />
+
+                <RadioButton
+                    android:id="@+id/answer_5_op_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Almost every day" />
+
+            </RadioGroup>
+
+            <!-- Question 6 -->
+            <TextView
+                android:id="@+id/heading_6"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_5"
+                android:layout_marginTop="40dp"
+                android:text="Question-6"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_6"
+                android:text="@string/question_6"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/answer_6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/question_6"
+                android:gravity="bottom"
+                android:hint="Enter your response here"
+                android:text="dummy answer 6"/>
+
+
+            <!-- Question 7 -->
+            <TextView
+                android:id="@+id/heading_7"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_6"
+                android:layout_marginTop="40dp"
+                android:text="Question-7"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_7"
+                android:text="@string/question_7"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_7"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_7_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_7_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!-- Question 8 -->
+            <TextView
+                android:id="@+id/heading_8"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_7"
+                android:layout_marginTop="40dp"
+                android:text="Question-8"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_8"
+                android:text="@string/question_8"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/answer_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_8_op_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More frequent public transportation schedules"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/answer_8_op_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expanded bike lane infrastructure" />
+
+                <RadioButton
+                    android:id="@+id/answer_8_op_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carpooling matching services" />
+
+                <RadioButton
+                    android:id="@+id/answer_8_op_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lower-cost transportation passes for students" />
+                <RadioButton
+                    android:id="@+id/answer_8_op_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Improved traffic management in high-traffic areas" />
+
+            </RadioGroup>
+
+            <!-- Question 9 -->
+            <TextView
+                android:id="@+id/heading_9"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_8"
+                android:layout_marginTop="40dp"
+                android:text="Other concern(s)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/question_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_9"
+                android:text="If you have any other concern(s). Please specify."
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/answer_9"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/question_9"
+                android:gravity="bottom"
+                android:hint="Enter your response here"
+                android:text="dummy answer 9"/>
+
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_below="@+id/answer_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="Submit Response"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
