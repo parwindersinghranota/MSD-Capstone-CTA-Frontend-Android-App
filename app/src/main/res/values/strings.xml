@@ -32,6 +32,7 @@
     <string name="question_9">Any other concern(s)</string>
 
     <string name="survey_disclaimer">As part of our commitment to continuous improvement, we have incorporated a survey module to collect user feedback. Rest assured that any information provided through the survey will be treated as strictly confidential and will not be shared with any third parties. Your privacy and trust are of utmost importance to us.</string>
+    <string name="survey_disclaimer1">As part of our commitment to continuous improvement, we have incorporated a survey module to collect user feedback. Rest assured that any information provided through the survey will be treated as strictly confidential and will not be shared with any third parties. Your privacy and trust are of utmost importance to us.\n\nDo you want to proceed ?</string>
 
     <string name="accept_ride_message">PLEASE, ACCEPT MY RIDE REQUEST.</string>
 </resources>

@@ -104,15 +104,30 @@ public class UserDashboardActivity extends AppCompatActivity implements View.OnC
         } else if (v == buttonSearchRide) {
             startActivity(new Intent(getBaseContext(), FindRidesActivity.class));
         } else if (v == buttonTransportationSurvey) {
-            SharedPreferencesUtility sharedPreferencesUtility = SharedPreferencesUtility.getInstance(getBaseContext());
-            String userEmail = sharedPreferencesUtility.getString(Constants.USER_EMAIL);
-            findSurvey(userEmail);
+
+            openSurveyActivity();
+
 
         } else if(v == buttonDriverFeedback){
-            startActivity(new Intent(getBaseContext(), DriverFeedbackActivity.class));
+            Toast.makeText(getBaseContext(), "This feature is now available under rides screen", Toast.LENGTH_SHORT).show();
         }
     }
 
+    private void openSurveyActivity(){
+        new AlertDialog.Builder(this)
+                .setTitle("Survey Disclaimer")
+                .setMessage(R.string.survey_disclaimer1)
+                .setIcon(R.drawable.ic_warning)
+                .setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        SharedPreferencesUtility sharedPreferencesUtility = SharedPreferencesUtility.getInstance(getBaseContext());
+                        String userEmail = sharedPreferencesUtility.getString(Constants.USER_EMAIL);
+                        findSurvey(userEmail);
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
+    }
     private void findSurvey(String userEmail) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
